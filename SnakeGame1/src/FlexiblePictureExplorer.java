@@ -35,7 +35,7 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
   
   // main GUI
   /** window to hold GUI */
-  private JFrame pictureFrame;
+  public JFrame pictureFrame;
   /** window that allows the user to scroll to see a large picture */
   private JScrollPane scrollPane;
   
@@ -379,8 +379,9 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
     locationPanel.add(hBox);
     hBox.add(Box.createHorizontalGlue());
     
+    
     return locationPanel;
-  }
+    }
   
   /**
    * Create the color information panel
