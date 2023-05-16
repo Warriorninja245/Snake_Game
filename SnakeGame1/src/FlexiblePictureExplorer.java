@@ -1,5 +1,6 @@
 
 import java.awt.*;
+
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.image.*;
@@ -22,7 +23,7 @@ import javax.swing.border.*;
  * @author Keith McDermottt, gte047w@cc.gatech.edu
  * @author Barb Ericson ericson@cc.gatech.edu
  */
-public abstract class FlexiblePictureExplorer implements MouseMotionListener, ActionListener, MouseListener
+public abstract class FlexiblePictureExplorer extends JFrame implements MouseMotionListener, ActionListener, MouseListener
 {
  
   // current indicies
@@ -35,7 +36,7 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
   
   // main GUI
   /** window to hold GUI */
-  public JFrame pictureFrame;
+  private JFrame pictureFrame;
   /** window that allows the user to scroll to see a large picture */
   private JScrollPane scrollPane;
   
@@ -893,7 +894,7 @@ public abstract class FlexiblePictureExplorer implements MouseMotionListener, Ac
    * for the two images
  * @throws InterruptedException 
    */
-  public static void main( String args[]) throws InterruptedException
+  public static void main(String args[]) throws InterruptedException
   {
     //Picture pix = new Picture("images/robot.jpg");
     //FlexiblePictureExplorer expl = new FlexiblePictureExplorer(pix){
